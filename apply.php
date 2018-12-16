@@ -11,7 +11,8 @@
 
 
 if($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "New record created successfully<br>";
+	echo "notification sent to mail check it";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
